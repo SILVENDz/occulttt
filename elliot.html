@@ -3,23 +3,27 @@
 <head>
     <title>Elliot's Canvas</title>
     <link rel="stylesheet" href="style3.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap" rel="stylesheet">
+<meta name="viewport" contents="width=device-width, initial-scale=1.0">
 </head>
+<body>
 
-<div class = mainContainer></div>
-
-
-
-
+<div class = mainContainer>
 <div class= subContainer>
 <div class= mainContent>
 
-    <nav class="directories">
+<nav class="directories">
 <ul><a href="elliot.html">Home</a></li>
 <li><a href="art.html">Art</a></li>
 <li><a href="clubs.html">Clubs</a></li>
 <li><a href="featured.html">Featured</a></li>
 </ul>
-    </nav>
+</nav>
 
 <div class="marqueeContainer">
     <div class="marqueeContent">
@@ -42,12 +46,29 @@ Hellou world! My name is Elliot, a super awesomeburger Junior at MECHS. I'm an a
 
 Kudos to Milo for helping me with my websites code ˆᗜˆ
 
+<div id ="commentBox">
+    <h2 id="commentArea"></h2>
 </div>
+<textarea id ="comment"></textarea>
+<button id="commentButton">Click me</button>
 
+<script>
+    var commentInput= document.getElementById("comment");
+    var commentArea= document.getElementById("commentArea");
+    var commentButton= document.getElementById("commentButton");
+    var allComments="";
+
+commentButton.addEventListener("click", function() {
+    allComments= allComments + "\n" + commentInbut.value;
+    commentArea.innerText= allComments;
+    commentInput.value="";
+});
+</script>
 
 </div>
 </div>
-
+</body>
+</html>
 
 
 
